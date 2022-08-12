@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 import { ActivatedRoute, ParamMap } from "@angular/router";
 import { Observable } from "rxjs";
@@ -12,10 +12,10 @@ import { CompanyService } from 'src/app/ser/company.service';
   styleUrls: ['./cadd.component.css']
 })
 export class CaddComponent implements OnInit {
-  companyForm: FormGroup;
+  companyForm: UntypedFormGroup;
   sub;
   comId;
-  constructor(  private route: ActivatedRoute,private fb: FormBuilder, private comSer: CompanyService, private _snackBar: MatSnackBar) {
+  constructor(  private route: ActivatedRoute,private fb: UntypedFormBuilder, private comSer: CompanyService, private _snackBar: MatSnackBar) {
     this.companyForm = this.fb.group({
       id: [Math.round(Math.random() * 100000), [Validators.required]],
       name: ["", [Validators.required]],
@@ -25,7 +25,7 @@ export class CaddComponent implements OnInit {
     });
        }
        get department() {
-        return this.companyForm.controls["departments"] as FormArray;
+        return this.companyForm.controls["departments"] as UntypedFormArray;
       }
   
       addLesson() {

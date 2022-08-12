@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from "@angular/forms";
 import { MatSnackBar } from "@angular/material/snack-bar";
 import { EmployeeService } from "src/app/ser/employee.service";
 
@@ -9,12 +9,12 @@ import { EmployeeService } from "src/app/ser/employee.service";
   styleUrls: ["./eadd.component.css"],
 })
 export class EaddComponent implements OnInit {
-  employeeForm: FormGroup;
+  employeeForm: UntypedFormGroup;
 
   constructor(
     private _snackBar: MatSnackBar,
     private empSer: EmployeeService,
-    private fb: FormBuilder
+    private fb: UntypedFormBuilder
   ) {
     this.employeeForm = this.fb.group({
       id: [Math.round(Math.random() * 100000), [Validators.required]],

@@ -23,9 +23,9 @@ import {
   styleUrls: ["./employee-list.component.css"],
 })
 export class EmployeeListComponent implements AfterViewInit, OnInit {
-  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
-  @ViewChild(MatSort, { static: false }) sort: MatSort;
-  @ViewChild(MatTable, { static: false }) table: MatTable<EmployeeListItem>;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatTable) table: MatTable<EmployeeListItem>;
   dataSource: EmployeeListDataSource;
   @Input() EmployeeData: EmployeeListItem[];
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */

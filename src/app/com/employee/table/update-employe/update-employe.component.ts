@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from "@angular/core";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from "@angular/forms";
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
 import { EmployeeService } from "src/app/ser/employee.service";
 
@@ -13,7 +13,7 @@ export class UpdateEmployeComponent {
     public dialogRef: MatDialogRef<UpdateEmployeComponent>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData,
     private empSer: EmployeeService,
-    private fb: FormBuilder
+    private fb: UntypedFormBuilder
   ) {
     this.employeeForm = this.fb.group({
       id: [this.data.id, [Validators.required]],
@@ -36,7 +36,7 @@ export class UpdateEmployeComponent {
     }
   }
 
-  employeeForm: FormGroup;
+  employeeForm: UntypedFormGroup;
 
   onSubmit() {
     console.log(this.employeeForm.value);

@@ -27,39 +27,37 @@ import { AreYouSureDialogComponent } from "./table/are-you-sure-dialog/are-you-s
 import { UpdateEmployeComponent } from "./table/update-employe/update-employe.component";
 
 @NgModule({
-  declarations: [
-    EhomeComponent,
-    EmainComponent,
-    EmployeeListComponent,
-    EaddComponent,
-    AreYouSureDialogComponent,
-    UpdateEmployeComponent,
-  ],
-  entryComponents: [AreYouSureDialogComponent, UpdateEmployeComponent],
-  imports: [
-    CommonModule,
-    RouterModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatInputModule,
-    FlexLayoutModule,
-    ReactiveFormsModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatIconModule,
-    MatSelectModule,
-    MatDialogModule,
-    MatSnackBarModule,
-  ],
-  exports: [
-    EhomeComponent,
-
-    EmainComponent,
-    EmployeeListComponent,
-    EaddComponent,
-  ],
+    declarations: [
+        EhomeComponent,
+        EmainComponent,
+        EmployeeListComponent,
+        EaddComponent,
+        AreYouSureDialogComponent,
+        UpdateEmployeComponent,
+    ],
+    imports: [
+        CommonModule,
+        RouterModule,
+        MatFormFieldModule,
+        MatButtonModule,
+        MatInputModule,
+        FlexLayoutModule,
+        ReactiveFormsModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatIconModule,
+        MatSelectModule,
+        MatDialogModule,
+        MatSnackBarModule,
+    ],
+    exports: [
+        EhomeComponent,
+        EmainComponent,
+        EmployeeListComponent,
+        EaddComponent,
+    ]
 })
 export class EmployeeModule {}

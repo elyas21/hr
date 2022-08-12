@@ -24,31 +24,29 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { CeditComponent } from './cedit/cedit.component';
 
 @NgModule({
-  declarations: [
-    ChomeComponent,
-    DdetailComponent,
-    TrimPipe,
-    CdetailComponent,
-    AcompanyComponent,
-    CaddComponent,
-    CeditComponent,
-  ],
-  entryComponents: [AcompanyComponent],
-  imports: [
-    // feature modle
-    // DepartmentModule,
-
-    CommonModule,
-    MatIconModule,
-    CompanyRoutingModule,
-    MatButtonModule,
-    MatCardModule,
-    MatTableModule,
-    FlexLayoutModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule
-  ],
-  exports: [CeditComponent]
+    declarations: [
+        ChomeComponent,
+        DdetailComponent,
+        TrimPipe,
+        CdetailComponent,
+        AcompanyComponent,
+        CaddComponent,
+        CeditComponent,
+    ],
+    imports: [
+        // feature modle
+        // DepartmentModule,
+        CommonModule,
+        MatIconModule,
+        CompanyRoutingModule,
+        MatButtonModule,
+        MatCardModule,
+        MatTableModule,
+        FlexLayoutModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule
+    ],
+    exports: [CeditComponent]
 })
 export class CompanyModule {}

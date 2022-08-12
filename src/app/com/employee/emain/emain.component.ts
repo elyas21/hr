@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormBuilder, Validators, FormGroup } from "@angular/forms";
+import { UntypedFormBuilder, Validators, UntypedFormGroup } from "@angular/forms";
 
 @Component({
   selector: "app-emain",
@@ -7,8 +7,8 @@ import { FormBuilder, Validators, FormGroup } from "@angular/forms";
   styleUrls: ["./emain.component.css"],
 })
 export class EmainComponent implements OnInit {
-  searchGroup: FormGroup;
-  constructor(private fb: FormBuilder) {
+  searchGroup: UntypedFormGroup;
+  constructor(private fb: UntypedFormBuilder) {
     this.searchGroup = this.fb.group({
       search: ["", Validators.required],
     });

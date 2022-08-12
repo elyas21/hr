@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Company } from 'src/app/model/company';
@@ -13,11 +13,11 @@ import { CompanyService } from 'src/app/ser/company.service';
   styleUrls: ['./cedit.component.css']
 })
 export class CeditComponent implements OnInit {
-  companyForm: FormGroup;
+  companyForm: UntypedFormGroup;
   constructor(
     private route: ActivatedRoute,
     private comSer: CompanyService,
-    private fb: FormBuilder
+    private fb: UntypedFormBuilder
   ) { 
     
   }
