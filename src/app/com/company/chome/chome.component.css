@@ -1,0 +1,19 @@
+.card-wrap {
+
+    display: grid;
+    gap: 1rem;
+    margin: 2vh 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: auto;
+  }
+  
+  .head-text{
+    margin: 0 0 0.8rem 0;
+  }
+  
+  /* Medium screens */
+  @media screen and (min-width: 600px) {
+    .card-wrap {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }

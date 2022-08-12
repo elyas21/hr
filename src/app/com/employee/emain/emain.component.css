@@ -1,0 +1,19 @@
+.formWrap {
+  padding: 5vh 0 5vh 0;
+}
+.form-field-wrap-div {
+  margin: 0 5rm 0 5rm;
+}
+.form > p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+a{
+  text-decoration: none;
+}
+mat-toolbar{
+  margin-bottom: 10vh;
+}

@@ -1,0 +1,52 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a
+        mat-list-item
+        [routerLink]="['/employee']"
+        routerLinkActive="router-link-active"
+        >Employee</a
+      >
+      <a mat-list-item routerLink="company">Company</a>
+      <!-- <a mat-list-item href="#">Salary</a>
+      <a mat-list-item href="#">Candidate</a> -->
+    </mat-nav-list>
+    <mat-nav-list>
+      <a
+        mat-list-item
+        [routerLink]="['/addE']"
+        routerLinkActive="router-link-active"
+        >add Employee</a
+      >
+      <a
+      mat-list-item
+      [routerLink]="['company','add']"
+      routerLinkActive="router-link-active"
+      >add Company</a
+    >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>HR</span>
+    </mat-toolbar>
+    <div class="router-outlet-wrapper"><router-outlet></router-outlet></div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

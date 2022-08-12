@@ -1,0 +1,46 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-around center">
+  <div
+    [routerLink]="['/employee']"
+    routerLinkActive="router-link-active"
+    fxFlex="1 1"
+    fxLayoutAlign="space-around center"
+  >
+    <button mat-button color="primary">List</button>
+  </div>
+  <div
+    [routerLink]="['/employee', 'add']"
+    routerLinkActive="router-link-active"
+    fxFlex="1 1"
+    fxLayoutAlign="space-around center"
+  >
+    <button mat-button color="primary" type="button">ADD</button>
+  </div>
+</mat-toolbar>
+<!-- <div fxLayout="row" class="formWrap" fxLayoutAlign="center center">
+  <form [formGroup]="searchGroup" (ngSubmit)="onSubmit()">
+    <p class="searchP" mat-header>Search Here</p>
+    <div
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      fxLayoutGap="15px"
+      class="form-field-wrap-div"
+    >
+      <mat-form-field>
+        <input matInput formControlName="search" />
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        type="submit"
+        color="primary"
+        aria-label="sdf"
+        [disabled]="!searchGroup.valid"
+        mat-button
+        placeholder="Search Here"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+</div> -->
+<router-outlet></router-outlet>

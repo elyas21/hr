@@ -1,0 +1,45 @@
+<mat-card class="row">
+  <div class="ch ch1">
+    <div [ngStyle]="{ padding: '4vh 4vw 4vh 4vw' }">
+      <img
+        mat-card-image
+        src="{{ company?.logo }}"
+        alt="Photo of a Shiba Inu"
+      />
+    </div>
+  </div>
+  <mat-card class="ch ch2">
+    <mat-card-header>{{ company?.name }}</mat-card-header>
+    <mat-card-content>
+      <p>{{ company?.note }}</p>
+    </mat-card-content>
+  </mat-card>
+</mat-card>
+
+<div class="card-wrap">
+  <mat-card
+    [routerLink]="['../../department', 'detail', department.id]"
+    class="example-card"
+    *ngFor="let department of $Departments | async"
+  >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ department.name }}</mat-card-title>
+      <mat-card-subtitle>department</mat-card-subtitle>
+    </mat-card-header>
+    <div [ngStyle]="{ padding: '4vh 4vw 4vh 4vw' }">
+      <mat-icon
+        class="icon-size"
+        aria-hidden="false"
+        color="primary"
+        aria-label="Example home icon"
+        >home</mat-icon
+      >
+    </div>
+    <mat-card-content>
+      <p>
+        {{ department.task | trim }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

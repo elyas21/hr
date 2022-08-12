@@ -1,0 +1,91 @@
+<div *ngIf="companyForm" fxLayout="row" fxLayoutAlign="center center">
+    <form
+      [ngStyle]="{ width: '80%' }"
+      (ngSubmit)="onSubmit()"
+      [formGroup]="companyForm"
+    >
+      <mat-card>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+          <div fxFlex="20" fxLayout="row" fxLayoutAlign="end center">
+            <mat-label>Company Name</mat-label>
+          </div>
+  
+          <mat-form-field fxFlex="55">
+            <input
+              formControlName="name"
+              placeholder="Company name"
+              matInput
+            />
+          </mat-form-field>
+          <div fxFlex="25">
+            <mat-error
+              *ngIf="
+                companyForm.controls['name'].invalid &&
+                (companyForm.controls['name'].dirty ||
+                  companyForm.controls['name'].touched)
+              "
+            >
+              Company name is <strong>required</strong>
+            </mat-error>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+          <div fxFlex="20" fxLayout="row" fxLayoutAlign="end center">
+            <mat-label>Company note</mat-label>
+          </div>
+          <mat-form-field fxFlex="55">
+            <input
+              formControlName="note"
+              placeholder="Company Note"
+              matInput
+            />
+          </mat-form-field>
+          <div fxFlex="25">
+            <mat-error
+              *ngIf="
+                companyForm.controls['note'].invalid &&
+                (companyForm.controls['note'].dirty ||
+                  companyForm.controls['note'].touched)
+              "
+            >
+              Note name is <strong>required</strong>
+            </mat-error>
+          </div>
+        </div>
+        <!-- <ng-container formArrayName="departments">
+            <ng-container *ngFor="let departmentform of departments.controls; let i = index">
+                <div class="lesson-form-row" [formGroup]="department">
+                    <mat-form-field appearance="fill">
+                        <input matInput
+                               formControlName="name"
+                               placeholder="Department name">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill">
+                        <input matInput
+                               formControlName="todo"
+                               placeholder="Department actions">
+                    </mat-form-field>
+                    
+                    <mat-icon class="delete-btn" (click)="deleteLesson(i)">
+                        delete_forever</mat-icon>
+                </div>
+            </ng-container>
+        </ng-container> -->
+        <div fxLayout="row" fxLayoutAlign="end center">
+          <mat-card-actions>
+            <button mat-raised-button color="primary" type="submit">
+              Submit
+            </button>
+          </mat-card-actions>
+          <div fxFlex="25"></div>
+        </div>
+    </mat-card>
+</form>
+<div>
+
+    <!-- <button mat-mini-fab (click)="addLesson()">
+        <mat-icon>add</mat-icon>
+    </button> -->
+</div>
+  </div>
+  

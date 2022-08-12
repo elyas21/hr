@@ -1,0 +1,51 @@
+<div
+  *ngIf="($companyies | async | json) != null; then thenBlock; else elseBlock"
+></div>
+<ng-template #thenBlock>
+  <div class="card-wrap">
+    <mat-card
+      class="example-card"
+      *ngFor="let company of $companyies | async"
+    > 
+    <a [ngStyle]="{ 'z-axis': 100 }" (click)="editD(company.id)">
+      <mat-icon color="accent">edit</mat-icon>
+    </a>
+    <a [ngStyle]="{ 'z-axis': 100 }" (click)="deleteC(company.id)">
+      <mat-icon color="warn">delete</mat-icon>
+    </a>
+    <div   [routerLink]="['detail', company.id]"    >
+
+      <mat-card-header
+      [ngStyle]="{ 'max-height': '75px' }"
+      fxLayout="row"
+      fxLayoutAlign="space-between  center"
+      >
+      <div>
+        <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ company.name }}</mat-card-title>
+          <mat-card-subtitle>company</mat-card-subtitle>
+        </div>
+        <a [ngStyle]="{ 'z-axis': 100 }" (click)="editD(company.id)">
+          <mat-icon color="accent">edit</mat-icon>
+        </a>
+      </mat-card-header>
+      <div [ngStyle]="{ padding: '4vh 4vw 4vh 4vw' }">
+        <img
+          mat-card-image
+          src="{{ company.logo }}"
+          alt="Photo of a Shiba Inu"
+        />
+      </div>
+      <mat-card-content>
+        <p>
+          {{ company.note | trim }}
+        </p>
+      </mat-card-content>
+    </div>
+
+    </mat-card>
+  </div>
+</ng-template>
+<ng-template #elseBlock
+  >Content to render when condition is false.
+</ng-template>

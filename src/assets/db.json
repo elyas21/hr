@@ -1,0 +1,667 @@
+{
+  "employees": [
+    {
+      "id": 2,
+      "firstName": "tsehaynew",
+      "middleName": "kebed",
+      "lastName": "mola",
+      "position": "senior Acountant",
+      "sex": "male",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "company": "1"
+    },
+    {
+      "id": 3,
+      "firstName": "abebe",
+      "lastName": "assefa",
+      "sex": "male",
+      "position": "jun Acountant",
+      "imgUrl": "assets/img/profile/abebe.jpg",
+      "salary": 51322,
+      "note": "good employee",
+      "company": "2"
+    },
+    {
+      "id": 4,
+      "firstName": "alemitu",
+      "lastName": "feleke",
+      "sex": "female",
+      "position": "V manager",
+      "imgUrl": "assets/img/profile/alemitu.jpg",
+      "salary": 323122,
+      "note": "not good employee",
+      "company": "001"
+    },
+    {
+      "id": 6,
+      "firstName": "kebede",
+      "lastName": "ali",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 7,
+      "firstName": "kebede",
+      "lastName": "ali",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 8,
+      "firstName": "kebede",
+      "lastName": "ali",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 9,
+      "firstName": "kebede",
+      "lastName": "ali",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 10,
+      "firstName": "chereka",
+      "lastName": "tefera",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 11,
+      "firstName": "temesgen",
+      "lastName": "berihun",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 12,
+      "firstName": "danel",
+      "lastName": "destaw",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 13,
+      "firstName": "elyas",
+      "lastName": "abate",
+      "sex": "male",
+      "position": "jun Acountant",
+      "imgUrl": "assets/img/profile/abebe.jpg",
+      "salary": 51322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 14,
+      "firstName": "tamagn",
+      "lastName": "wale",
+      "sex": "male",
+      "position": "event planer",
+      "imgUrl": "assets/img/profile/wedaje.jpg",
+      "salary": 21220,
+      "note": "not good employee",
+      "company": "001"
+    },
+    {
+      "id": 15,
+      "firstName": "amst",
+      "lastName": "tegegn",
+      "sex": "female",
+      "position": "V manager",
+      "imgUrl": "assets/img/profile/alemitu.jpg",
+      "salary": 323122,
+      "note": "not good employee",
+      "company": "001"
+    },
+    {
+      "id": 16,
+      "firstName": "abrham",
+      "lastName": "mola",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 17,
+      "firstName": "anberbr",
+      "lastName": "biwota",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 18,
+      "firstName": "eyobj",
+      "middleName": null,
+      "lastName": "henok",
+      "position": "senior Acountant",
+      "sex": "male",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "company": "001"
+    },
+    {
+      "id": 19,
+      "firstName": "nigus",
+      "lastName": "minyilk",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "id": 20,
+      "firstName": "fasil",
+      "lastName": "nigus",
+      "sex": "male",
+      "position": "senior Acountant",
+      "imgUrl": "assets/img/profile/kebede.jpg",
+      "salary": 21322,
+      "note": "good employee",
+      "company": "001"
+    },
+    {
+      "resource": {
+        "id": 19772,
+        "firstName": "elyas",
+        "middleName": "abate",
+        "lastName": "amare",
+        "position": "",
+        "sex": "male",
+        "imgUrl": "",
+        "salary": 10000,
+        "company": ""
+      },
+      "id": 22
+    },
+    {
+      "resource": {
+        "id": 92567,
+        "firstName": "mola",
+        "middleName": "kebnede",
+        "lastName": "fkdj",
+        "position": "",
+        "sex": "male",
+        "imgUrl": "",
+        "salary": 340930,
+        "company": ""
+      },
+      "id": 23
+    },
+    {
+      "resource": {
+        "id": 66506,
+        "firstName": "molaf",
+        "middleName": "kldfj",
+        "lastName": "kfjk",
+        "position": "",
+        "sex": "female",
+        "imgUrl": "",
+        "salary": 324332,
+        "company": ""
+      },
+      "id": 24
+    },
+    {
+      "id": 93117,
+      "firstName": "new ",
+      "middleName": "user ",
+      "lastName": "came",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 9050385,
+      "company": ""
+    },
+    {
+      "id": 79801,
+      "firstName": "abe",
+      "middleName": "ksdfj",
+      "lastName": "fk",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 666,
+      "company": ""
+    },
+    {
+      "id": 73530,
+      "firstName": "new ",
+      "middleName": "emp",
+      "lastName": "new",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 4903094,
+      "company": ""
+    },
+    {
+      "id": 48293,
+      "firstName": "afd",
+      "middleName": "lkdfj",
+      "lastName": "lkjf",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 32,
+      "company": ""
+    },
+    {
+      "id": 58620,
+      "firstName": "mola",
+      "middleName": "kebede ",
+      "lastName": "kasaa",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 90000,
+      "company": ""
+    },
+    {
+      "id": 48266,
+      "firstName": "j",
+      "middleName": "ji",
+      "lastName": "j",
+      "position": "",
+      "sex": "male",
+      "imgUrl": "",
+      "salary": 5678,
+      "company": ""
+    },
+    {
+      "id": 16725,
+      "firstName": "teuih",
+      "middleName": "u",
+      "lastName": "h",
+      "position": "",
+      "sex": "male",
+      "imgUrl": "",
+      "salary": "",
+      "company": ""
+    },
+    {
+      "id": 99746,
+      "firstName": "NEW",
+      "middleName": "FKL",
+      "lastName": "F",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 32,
+      "company": ""
+    },
+    {
+      "id": 7167,
+      "firstName": "OP",
+      "middleName": "OP",
+      "lastName": "OP",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 3232,
+      "company": ""
+    },
+    {
+      "id": 66305,
+      "firstName": "KP",
+      "middleName": "KP",
+      "lastName": "KP",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": 99,
+      "company": ""
+    },
+    {
+      "id": 56501,
+      "firstName": "b",
+      "middleName": "f",
+      "lastName": "kff",
+      "position": "",
+      "sex": "female",
+      "imgUrl": "",
+      "salary": null,
+      "company": ""
+    }
+  ],
+  "companies": [
+    {
+      "id": 2,
+      "name": "J-pipesui",
+      "logo": "assets/img/logo/j-pipes.jpg",
+      "note": "j-pipes is the best pipe producer in the world, lorem epsum"
+    },
+    {
+      "id": 1,
+      "name": "Q-group",
+      "logo": "assets/img/logo/q-group.jpg",
+      "departments": [
+        "IT",
+        "HR",
+        "En",
+        "Fi"
+      ],
+      "note": "Q-group is the best company in the world, lorem epsum. in our group every elements have its onwn value lead for the bettet world"
+    },
+    {
+      "id": 1,
+      "name": "V-engineering",
+      "logo": "assets/img/logo/v-engineering.jpg",
+      "departments": [
+        "IT",
+        "HR",
+        "En",
+        "Fi"
+      ],
+      "note": "v-engineering is the best company in the world, lorem epsum. in our group every elements have its onwn value lead for the bettet world"
+    },
+    {
+      "id": 7,
+      "name": "D-tech",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "departments": [
+        "IT",
+        "HR",
+        "En",
+        "Fi"
+      ],
+      "note": "d-tech is the best work in the contry lead us in the comming and future"
+    },
+    {
+      "id": 8,
+      "name": "i-plastic",
+      "logo": "assets/img/logo/i-plastic.jpg",
+      "departments": [
+        "IT",
+        "HR",
+        "En",
+        "Fi"
+      ],
+      "note": "i-plastic is the best plastic development company in the new workd and future"
+    },
+    {
+      "id": 8,
+      "name": "n-movies",
+      "logo": "assets/img/logo/n-movies.jpg",
+      "departments": [
+        "IT",
+        "HR",
+        "En",
+        "Fi"
+      ],
+      "note": "n-movies is the best movie producer in the world of movies and national tv station and also the is thte most used english word "
+    },
+    {
+      "id": 50027,
+      "name": "",
+      "logo": "",
+      "note": "",
+      "departments": [
+        {
+          "name": "",
+          "task": "beginner",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 55588,
+      "name": "",
+      "logo": "",
+      "note": "",
+      "departments": [
+        {
+          "name": "",
+          "task": "beginner",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 38828,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 85843,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 64678,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 25413,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 4043,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 20125,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": []
+    },
+    {
+      "id": 21813,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 39333,
+      "name": "",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note",
+      "departments": [
+        {
+          "name": "",
+          "task": "todo",
+          "company": null
+        }
+      ]
+    },
+    {
+      "id": 42038,
+      "name": "sdf",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "fkj"
+    },
+    {
+      "id": 64580,
+      "name": "ultra",
+      "logo": "assets/img/logo/d-tech.jpg",
+      "note": "note"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 1
+    },
+    {
+      "id": 2,
+      "name": "IT",
+      "task": "It and computer stuf and none hardware main proble solve isues that raise on the meeting",
+      "company": 1
+    },
+    {
+      "id": 3,
+      "name": "Fi",
+      "task": "human resouce and managnmet ethio money economy",
+      "company": 1
+    },
+    {
+      "id": 4,
+      "name": "En",
+      "task": "human resouce and managnmet",
+      "company": 1
+    },
+    {
+      "id": 5,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 1
+    },
+    {
+      "id": 6,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 2
+    },
+    {
+      "id": 7,
+      "name": "IT",
+      "task": "human resouce and managnmet",
+      "company": 2
+    },
+    {
+      "id": 8,
+      "name": "Fi",
+      "task": "human resouce and managnmet",
+      "company": 2
+    },
+    {
+      "id": 9,
+      "name": "En",
+      "task": "human resouce and managnmet",
+      "company": 2
+    },
+    {
+      "id": 10,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 2
+    },
+    {
+      "id": 11,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 3
+    },
+    {
+      "id": 12,
+      "name": "IT",
+      "task": "human resouce and managnmet",
+      "company": 3
+    },
+    {
+      "id": 13,
+      "name": "Fi",
+      "task": "human resouce and managnmet",
+      "company": 3
+    },
+    {
+      "id": 14,
+      "name": "En",
+      "task": "human resouce and managnmet",
+      "company": 3
+    },
+    {
+      "id": 15,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 3
+    },
+    {
+      "id": 4,
+      "name": "HR",
+      "task": "human resouce and managnmet",
+      "company": 4
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+  <form
+    [ngStyle]="{ width: '80%' }"
+    (ngSubmit)="onSubmit()"
+    [formGroup]="employeeForm"
+  >
+    <mat-card>
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="end center">
+          <mat-label>First Name</mat-label>
+        </div>
+
+        <mat-form-field fxFlex="55">
+          <input
+            formControlName="firstName"
+            placeholder="First Name"
+            matInput
+          />
+        </mat-form-field>
+        <div fxFlex="25">
+          <mat-error
+            *ngIf="
+              employeeForm.controls['firstName'].invalid &&
+              (employeeForm.controls['firstName'].dirty ||
+                employeeForm.controls['firstName'].touched)
+            "
+          >
+            First name is <strong>required</strong>
+          </mat-error>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="end center">
+          <mat-label>Middle Name</mat-label>
+        </div>
+        <mat-form-field fxFlex="55">
+          <input
+            formControlName="middleName"
+            placeholder="Middle Name"
+            matInput
+          />
+        </mat-form-field>
+        <div fxFlex="25">
+          <mat-error
+            *ngIf="
+              employeeForm.controls['middleName'].invalid &&
+              (employeeForm.controls['middleName'].dirty ||
+                employeeForm.controls['middleName'].touched)
+            "
+          >
+            Middle name is <strong>required</strong>
+          </mat-error>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="end center">
+          <mat-label>Last Name</mat-label>
+        </div>
+        <mat-form-field fxFlex="55">
+          <input formControlName="lastName" placeholder="Last Name" matInput />
+        </mat-form-field>
+        <div fxFlex="25">
+          <mat-error
+            *ngIf="
+              employeeForm.controls['lastName'].invalid &&
+              (employeeForm.controls['lastName'].dirty ||
+                employeeForm.controls['lastName'].touched)
+            "
+          >
+            Last name is <strong>required</strong>
+          </mat-error>
+        </div>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="start center" fxLayoutGap="9px">
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="end center">
+          <mat-label>Sex</mat-label>
+        </div>
+        <mat-form-field fxFlex="18" appearance="standard">
+          <mat-label>Select Sex</mat-label>
+          <mat-select matInput placeholder="Sex" formControlName="sex">
+            <mat-option value="male">Male</mat-option>
+            <mat-option value="female">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div fxFlex="14" fxLayout="row" fxLayoutAlign="end center">
+          <mat-label>Salary</mat-label>
+        </div>
+        <div fxFlex="17">
+          <mat-form-field [ngStyle]="{ width: '100%' }">
+            <input
+              formControlName="salary"
+              placeholder="Salary"
+              matInput
+              type="number"
+            />
+          </mat-form-field>
+        </div>
+        <div fxFlex="25">
+          <mat-error
+            *ngIf="
+              employeeForm.controls['lastName'].invalid &&
+              (employeeForm.controls['lastName'].dirty ||
+                employeeForm.controls['lastName'].touched)
+            "
+          >
+            Last name is <strong>required</strong>
+          </mat-error>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="end center">
+        <mat-card-actions>
+          <button mat-raised-button color="primary" type="submit">
+            Submit
+          </button>
+        </mat-card-actions>
+        <div fxFlex="25"></div>
+      </div>
+    </mat-card>
+  </form>
+</div>
